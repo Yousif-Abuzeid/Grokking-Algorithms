@@ -163,8 +163,7 @@ chapter 4.`
 - O(n^2). Example: A slow sorting algorithm, like selection sort (coming up in chapter 2).
 - O(n!). Example: A really slow algorithm, like the traveling salesperson (coming up in chapter 8).
 
-`Suppose you're drawing a grid of (n) boxes, and you can choose
-from 5 different algorithms to do so, You Can Do 10 Operations Per Second.`
+### `Suppose you're drawing a grid of (n) boxes, and you can choose from 5 different algorithms to do so, You Can Do 10 Operations Per Second.`
 
 ![Graph for Big O](BigO.png)
 
