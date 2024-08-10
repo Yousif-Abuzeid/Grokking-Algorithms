@@ -161,7 +161,7 @@ chapter 4.`
 - O(n), also known as linear time. Example: Simple search.
 - O(n * log n). Example: A fast sorting algorithm, like quicksort (coming up in chapter 4).
 - O(n^2). Example: A slow sorting algorithm, like selection sort (coming up in chapter 2).
-- O(n!). Example: A really slow algorithm, like the traveling salesperson (coming up in chapter 8).
+- O(n!). Example: A really slow algorithm, like the traveling salesperson (coming up next!).
 
 ### `Suppose you're drawing a grid of (n) boxes, and you can choose from 5 different algorithms to do so, You Can Do 10 Operations Per Second.`
 
@@ -194,3 +194,32 @@ increases as the size of the input increases.
 `O(n)`
 - 4. You want to read the numbers of just the As. 
 `O(n)`
+
+# Traveling Salesperson Problem
+
+### `The traveling salesperson problem is a famous problem in computer science. Here’s the problem: you are a salesperson, and you want to make a tour of N cities. You want to visit each city exactly once and then return to the starting city. You want to take the shortest path possible. What’s the shortest path that visits all the cities?`
+
+#### Example You have 5 cities, and you want to visit each city exactly once and then return to the starting city. What’s the shortest path that visits all the cities?
+
+![Map of Cities](Map.png)
+
+He adds up the total distance and then picks the path with the
+lowest distance. There are 120 permutations with 5 cities, so it will
+take 120 operations to solve the problem for 5 cities. For 6 cities, it
+will take 720 operations (there are 720 permutations). For 7 cities,
+it will take 5,040 operations!
+
+![Paths](Paths.png)
+
+![permutations](Permutations.png)
+
+In general, for n items, it will take n! (n factorial) operations to
+compute the result. So this is O(n!) time, or factorial time. It takes a
+lot of operations for everything except the smallest numbers. Once
+you’re dealing with 100+ cities, it’s impossible to calculate the answer in
+time—the Sun will collapse first.
+This is a terrible algorithm! Opus should use a different one, right? But
+he can’t. This is one of the unsolved problems in computer science.
+There’s no fast known algorithm for it, and smart people think it’s
+impossible to have a smart algorithm for this problem. The best we can
+do is come up with an approximate solution; see chapter 10 for more.
