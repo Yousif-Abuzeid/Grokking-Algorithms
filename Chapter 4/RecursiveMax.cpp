@@ -3,15 +3,15 @@
 
 
 template<typename T>
-int max(std::vector<T> v) {
+T max(std::vector<T> v) {
     if(v.size() == 0) {
         return 0;
     }
     
-    int first = v[0];
+    T first = v[0];
     v.erase(v.begin());
     
-    int maxRest = max(v);
+    T maxRest = max(v);
     
     return first > maxRest ? first : maxRest;
 }
