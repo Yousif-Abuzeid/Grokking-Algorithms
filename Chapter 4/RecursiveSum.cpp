@@ -6,9 +6,7 @@ int sum(std::vector<T> v) {
     if(v.size() == 0) {
         return 0;
     }
-    if(v.size() == 1) {
-        return v[0];
-    }
+    
     int first = v[0];
     v.erase(v.begin());
     
